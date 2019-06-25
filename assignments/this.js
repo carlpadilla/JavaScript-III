@@ -16,19 +16,19 @@ function myName(name) {
   console.log(this);
   return name;
 }
-myName('Carl');
+myName("Carl!");
 
 // Principle 2
 // code example for Implicit Binding
 
 const myObj = {
-  greeting: 'Hello',
+  greeting: "Hello",
   sayHello: function(name) {
     console.log(`${this.greeting} my name is ${name}`); //Implicit Binding
     console.log(this);
   }
 };
-myObj.sayHello('Carlo');
+myObj.sayHello("Carlo");
 
 const sayName = obj => {
   obj.sayMyName = function() {
@@ -37,7 +37,7 @@ const sayName = obj => {
   };
 };
 
-const me = { name: 'Billy' };
+const me = { name: "Billy" };
 sayName(me);
 
 me.sayMyName();
@@ -53,32 +53,32 @@ function Person(greeter) {
   };
 }
 
-const jenny = new Person({ name: 'Jenny', age: 28 }); // New binding
+const jenny = new Person({ name: "Jenny", age: 28 }); // New binding
 jenny.speak();
 
 // Principle 4
 // code example for Explicit Binding
 
 const carl = {
-  name: 'Carl Padilla',
-  city: 'Philadelphia',
+  name: "Carl Padilla",
+  city: "Philadelphia",
   age: 33,
-  favoriteFood: 'Salmon'
+  favoriteFood: "Salmon"
 };
 
 const jen = {
-  name: 'Jenny Moua',
-  city: 'Philadelphia',
+  name: "Jenny Moua",
+  city: "Philadelphia",
   age: 28,
-  favoriteFood: 'Noodles'
+  favoriteFood: "Noodles"
 };
 
 const hobbies = [
-  'Skateboarding',
-  'Learning Web Dev',
-  'Cars',
-  'Horror Movies',
-  'Music'
+  "Skateboarding",
+  "Learning Web Dev",
+  "Cars",
+  "Horror Movies",
+  "Music"
 ];
 
 function tellUsAboutYourself(thing1, thing2, thing3, thing4) {
